@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { CatCarousel } from "@/components/CatCarousel";
 
 export default function Home() {
   return (
@@ -38,6 +39,8 @@ export default function Home() {
             </Link>
           </div>
         </section>
+
+        <CatCarousel />
 
         <section id="features" className="grid gap-4 md:grid-cols-3">
           <article className="rounded-2xl border border-white/10 bg-white/5 p-6">
