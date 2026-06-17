@@ -122,21 +122,17 @@ export default function CardsList() {
 
   if (loading) {
     return (
-      <main className="mx-auto max-w-7xl p-6">
+      <main className="mx-auto max-w-7xl">
         <p>Cargando categorías...</p>
       </main>
     );
   }
 
   return (
-    <main className="mx-auto max-w-7xl space-y-12 p-6">
-      <header>
-        <h1 className="text-4xl font-bold">🐱 Cat Gallery</h1>
-      </header>
-
-      {tags.map((tag) => (
-        <TagSection key={tag} tag={tag} />
-      ))}
-    </main>
-  );
+  <main className="min-h-screen w-full bg-zinc-950 text-white space-y-12">
+    {tags.map((tag) => (
+      <TagSection key={tag} tag={tag} />
+    ))}
+  </main>
+);
 }
