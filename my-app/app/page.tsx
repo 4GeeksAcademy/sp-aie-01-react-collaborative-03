@@ -1,3 +1,4 @@
+import CatalogoJonathanPage from './catalogo-jonathan/page';
 import Link from "next/link";
 import { CatCarousel } from "@/components/CatCarousel";
 

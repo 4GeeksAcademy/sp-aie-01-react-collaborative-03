@@ -13,7 +13,15 @@ const nextConfig: NextConfig = {
       }
     ],
   },
+  // Inyectamos el Proxy Inverso aquí para evadir el bloqueo de Firefox en Codespaces
+  async rewrites() {
+    return [
+      {
+        source: '/api/gatos-externos/:path*',
+        destination: 'https://cataas.com/:path*',
+      },
+    ];
+  },
 };
-
 
 export default nextConfig;
