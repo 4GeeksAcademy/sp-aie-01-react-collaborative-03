@@ -68,7 +68,12 @@ const FormularioSergioMBPage = () => {
                 />
 
 
-                <button type="button" className="" value="Submit" onClick={onSubmit}>Submit</button>
+                <button
+                    type="button"
+                    className="text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 rounded-lg text-sm px-4 py-2.5"
+                    onClick={onSubmit}>
+                    Enviar
+                </button>
             </form>
         </div>
 
