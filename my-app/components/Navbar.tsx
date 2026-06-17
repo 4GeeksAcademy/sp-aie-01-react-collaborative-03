@@ -17,6 +17,18 @@ const routes: RouteData[] = [
     {
         path: "formulario-sergiomb",
         displayText: "Formulario SergioMB",
+    },
+    {
+        path: "catalogo-jonathan",
+        displayText: "Cat. Jonathan",
+    },
+    {
+        path: "catalogo-sergio",
+        displayText: "Cat. Sergio Hernández",
+    },
+    {
+        path: "catalogo-sergiomb",
+        displayText: "Cat. Sergio MB",
     }
 ]
 
